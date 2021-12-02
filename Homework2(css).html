@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	#firstname{
+		background-color: yellow;
+	}
+	.hometown{
+		background-color: yellow;
+	}
+	body{background-color: olive;}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	h3 {color: orange ; margin-left: 40px;}
+	<title>HW2</title>
+</style>
+</head>
+<body>
+	<form>
+	<table style="border:3px #cccccc solid;" cellpadding="10" border=‘1’>
+	<tr>
+		<th style = "color:lime;"colspan ="3"> About -- 110306083 </th>
+	</tr>
+	<tr>
+		<th rowspan="3">
+			<img src = "ㄑㄑ.png" width = "50" length = "50">
+			<p style="font-style:italic;">personal photo </p>
+		</th>
+		<td colspan = "2"><p id = "firstname"><label> Name:
+		<input name = "name" type = "text" size = "25"
+			maxlength = "30">
+		<p class = "hometown"><label>Gender:
+		<input type="radio" name="site" value="male">Male
+		<input type="radio" name="site" value="female">Female
+		<input type="radio" name="site" value="other">Other
+		</label></p></td>
+	</tr>
+	<tr>
+		<td>
+			<label for="Country">Country:</label>
+			<select name = "country">
+				<option value="Taipei">Taipei</option>
+				<option value="Tainan">Tainan</option>
+				<option value="Taichung">Taichung</option>
+				<option value="Taoyuan">Taoyuan</option>
+			</select></form></td>
+		<td rolspan = "2">
+			<label>Birthday:<input id="date" type="date"></label>
+		</td>
+	</tr>
+	<tr> 
+		<td colspan = "2">
+			<label> E-mail:</label>
+		<input name = "name" type = "text" size = "25"
+			maxlength = "50"</label>
+		</td>
+	</tr>
+	<tr>
+		<td style = "color:orange;">Hobby</td>
+		<td colspan = "2"><form action="/action_page.php" method="get">
+			<input type="checkbox" name="favorite" value ="Swimming">Swimming
+			<input type="checkbox" name="favorite" value ="Volleyball">Volleyball
+			<input type="checkbox" name="favorite" value ="Movie">Movie
+			<input type="checkbox" name="favorite" value ="Game">Game
+			<input type="checkbox" name="favorite" value ="Sleep">Sleep 
+		</form></td>
+	</tr>
+	<tr>
+		<td style = "color:orange;">Skill</td>
+		<td colspan = "2"><form action="/action_page.php" method="get">
+			<input type="checkbox" name="capable" value ="Java">Java
+			<input type="checkbox" name="capable" value ="HTML">HTML
+			<input type="checkbox" name="capable" value ="Python">Python
+			<input type="checkbox" name="capable" value ="Office">Microsoft Office
+			<input type="checkbox" name="capable" value ="Premiere">Premiere
+		</form></td>
+	</tr>
+	<tr>
+		<td><label> <h3>Say Something</h3></label></td>
+		<td colspan ="3"><p><textarea rows="3" cols="50">Say something here.</textarea></p></td>
+	</tr>
+	<tr>
+		<td colspan ="3">
+		<input type="submit" value = "Submit"> 
+		<input type="reset" value = "Clear">
+		</td>
+	</tr>
+
+
+</table>
+</form>
+</body>
+</html>
